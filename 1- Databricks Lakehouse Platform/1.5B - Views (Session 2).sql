@@ -1,4 +1,10 @@
 -- Databricks notebook source
+-- MAGIC %md
+-- MAGIC # Accessing views
+-- MAGIC Let's now try to access the views previously created.
+
+-- COMMAND ----------
+
 SHOW TABLES;
 
 -- COMMAND ----------
