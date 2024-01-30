@@ -1,5 +1,10 @@
 -- Databricks notebook source
 -- MAGIC %md
+-- MAGIC # Delta Lake Views
+
+-- COMMAND ----------
+
+-- MAGIC %md
 -- MAGIC ## Preparing Sample Data
 
 -- COMMAND ----------
@@ -27,6 +32,7 @@ SHOW TABLES
 
 -- MAGIC %md
 -- MAGIC ## Creating Stored Views
+-- MAGIC First, we'll create a traditional (STORED) VIEW.
 
 -- COMMAND ----------
 
@@ -46,8 +52,8 @@ SHOW TABLES;
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC
 -- MAGIC ## Creating Temporary Views
+-- MAGIC Now we'll create a new temporaty view, within the scope of the Spark Session.
 
 -- COMMAND ----------
 
@@ -64,8 +70,8 @@ SHOW TABLES;
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC
 -- MAGIC ## Creating Global Temporary Views
+-- MAGIC And finally, we can create a global temporary view, that has the scope of the cluster.
 
 -- COMMAND ----------
 
@@ -89,3 +95,7 @@ SHOW TABLES IN global_temp;
 -- COMMAND ----------
 
 SHOW TABLES
+
+-- COMMAND ----------
+
+
